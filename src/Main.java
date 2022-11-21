@@ -1,10 +1,14 @@
 public class Main {
     public static void main(String[] args)
     {
+        Vector2 p1 = new Vector2();
+
 
         Triangle triangle = null;
 
         Vector2[] verts = {new Vector2(0, 2), new Vector2(2, 2), new Vector2(3, 1)};
+
+
 
         try
         {
