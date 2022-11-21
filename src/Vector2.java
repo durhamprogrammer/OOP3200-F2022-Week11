@@ -182,4 +182,26 @@ public class Vector2
         return "(" + getX() + ", " + getY() + ")";
     }
 
+    @Override
+    public boolean equals(Object obj)
+    {
+        // If the object is compared with itself then return true
+        if (obj == this)
+        {
+            return true;
+        }
+
+        /* Check if obj is an instance of Vector2 or not
+          "null instanceof [type]" also returns false */
+        if (!(obj instanceof Vector2))
+        {
+            return false;
+        }
+
+        // typecast o to Complex so that we can compare data members
+        Vector2 vector2 = (Vector2) obj;
+
+        // Compare the data members and return accordingly
+        return Float.compare(getX(), vector2.getX()) == 0 && Float.compare(getY(), vector2.getY()) == 0;
+    }
 }
