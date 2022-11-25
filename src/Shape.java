@@ -4,7 +4,7 @@ import java.util.Arrays;
 public abstract class Shape
 {
     // private instance members
-    private ArrayList<Vector2> vertices;
+    protected ArrayList<Vector2> vertices;
     private ArrayList<Line> edges;
 
     // public properties

@@ -1,20 +1,18 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args)
     {
         Vector2 p1 = new Vector2();
 
+        Polygon triangle = null;
 
-        Triangle triangle = null;
-
-        Vector2[] verts = {new Vector2(0, 2), new Vector2(2, 2), new Vector2(3, 1)};
-
-
+        Vector2[] verts = {new Vector2(0, 2), new Vector2(2, 2), new Vector2(2, 3)};
 
         try
         {
-            //triangle = new Triangle(new Vector2(0, 1), new Vector2(2, 0), new Vector2());
-
-            triangle = new Triangle(verts);
+            triangle = new Polygon(verts);
         }
         catch (Exception e)
         {
@@ -22,5 +20,8 @@ public class Main {
         }
 
         System.out.println(triangle);
+
+
+
     }
 }
